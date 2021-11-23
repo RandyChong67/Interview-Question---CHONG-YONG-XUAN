@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Chong Yong Xuan</title>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script rel="script" src="script.js" defer></script>
+</head>
+<body>
+
+<div class="div-input">
+    <div class="div-user-id">
+        <span class="span-user-id">
+            userID
+        </span><br />
+        <input type="text" class="text-user-id" id="text-user-id" disabled/>
+    </div>
+    
+    <div class="div-user-name">
+        <input type="text" class="text-user-name" id="text-user-name" placeholder="User Name"/>
+    </div>
+
+    <div class="div-user-occupation">
+        <input type="text" class="text-user-occupation" id="text-user-occupation" placeholder="User Occupation"/>
+    </div>
+
+    <div class="div-add">
+        <button class="button-add" id="button-add">
+            Add
+        </button>
+    </div>
+</div>
+
+<div class="div-sort-by">
+    <label for="ddl-user">Sort By:</label>
+    <select name="ddl-user" id="ddl-user" onchange="sortTable()">
+        <option value="user-id">User ID</option>
+        <option value="user-name">User Name</option>
+        <option value="user-occupation">User Occupation</option>
+    </select>
+</div>
+
+<div class="div-output">
+    <table id="table-user">
+        <tr>
+          <td>User ID</td>
+          <td>User Name</td>
+          <td>User Occupation</td>
+        </tr>
+      </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-input{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.div-output, .div-sort-by{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#ddl-user{
+    margin-left: 10px;
+}
+
+.button-add{
+    width: 4rem;
+    height: 2rem;
+}
+
+.div-user-name,
+.div-user-occupation,
+.div-add{
+    padding-top: 15px;
+}
+
+.text-user-name,
+.text-user-occupation{
+    height: 1.5rem;
+}
+td, table {
+    border: 1px solid black;
+  }
+
+  td{
+      padding: 5px;
+  }
+
+@media only screen and (max-width: 1200px) {
+    .div-input{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+    }
+    .div-output, .div-sort-by{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .div-input{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+    .div-output, .div-sort-by{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .div-input{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        flex-direction: column;
+    }
+    .div-output, .div-sort-by{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .div-input{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .div-output, .div-sort-by{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+  }
