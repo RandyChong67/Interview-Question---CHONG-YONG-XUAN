@@ -3,8 +3,11 @@ var btnAdd = document.getElementById("button-add");
 var tableUser = document.getElementById("table-user");
 
 var nameList = [];
+
+//initiate the user id start with 1
 txtUserID.value = 1;
 
+//sort the table based on value of dropdownlist
 function sortTable(){
     if (document.getElementById("ddl-user").value == "user-id"){
         nameList.sort(function (a, b) {
@@ -26,6 +29,7 @@ function sortTable(){
     createTable()
 }
 
+//when button is clicked, add the id, name, and occupation to the array list
 btnAdd.onclick = function () {
     var userName = document.getElementById("text-user-name").value;
     var userOccupation = document.getElementById("text-user-occupation").value;
@@ -37,7 +41,7 @@ btnAdd.onclick = function () {
     createTable()
 }
 
-//create the table with user list
+//create the table based on the array list
 function createTable(){
     while (tableUser.rows.length > 1) {
         tableUser.deleteRow(1);
